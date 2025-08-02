@@ -26,8 +26,12 @@
   ],
   "author": "Marian Hello",
   "maintainers": [
-    "Suman Saurabh",
-    "Viplove Choudhary"
+    {
+      "name": "Suman Saurabh"
+    },
+    {
+      "name": "Viplove Choudhary"
+    }
   ],
   "license": "Apache-2.0",
   "bugs": {
@@ -39,5 +43,6 @@
   },
   "peerDependencies": {
     "react-native": ">=0.60.5"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,6 +1,6 @@
-# @anwar1909/react-native-background-geolocation
+# @anwar1909/react-native-background-geolocationx
 
-[![npm](https://img.shields.io/npm/v/@anwar1909/react-native-background-geolocation?style=flat-square)](https://www.npmjs.com/package/@anwar1909/react-native-background-geolocation)
+[![npm](https://img.shields.io/npm/v/@anwar1909/react-native-background-geolocationx?style=flat-square)](https://www.npmjs.com/package/@anwar1909/react-native-background-geolocationx)
 
 > Forked from [@drewaker/react-native-background-geolocation](https://github.com/flaviolima9904/react-native-background-geolocation), and this forked from [@emoreno/react-native-background-geolocation](https://github.com/emoreno-94/react-native-background-geolocation), and this forked from [@hariks789/react-native-background-geolocation](https://github.com/hariks789/react-native-background-geolocation) due to inactivity.
 Original Repo: [@mauron85/react-native-background-geolocation](https://github.com/mauron85/react-native-background-geolocation)
@@ -8,11 +8,11 @@ Original Repo: [@mauron85/react-native-background-geolocation](https://github.co
 ## Installation
 
 ```
-npm i @anwar1909/react-native-background-geolocation
+npm i @anwar1909/react-native-background-geolocationx
 ```
 
 ```
-yarn add @anwar1909/react-native-background-geolocation
+yarn add @anwar1909/react-native-background-geolocationx
 ```
 
 ### Automatic setup
@@ -21,7 +21,7 @@ Since version 0.60 React Native does linking of modules [automatically](https://
 As plugin depends on additional 'common' module, it is required to link it with:
 
 ```
-node ./node_modules/@anwar1909/react-native-background-geolocation/scripts/postlink.js
+node ./node_modules/@anwar1909/react-native-background-geolocationx/scripts/postlink.js
 ```
 
 ### Manual setup
@@ -33,9 +33,9 @@ In `android/settings.gradle`
 ```gradle
 ...
 include ':@anwar1909_react-native-background-geolocation-common'
-project(':@anwar1909_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, '../node_modules/@anwar1909/react-native-background-geolocation/android/common')
-include ':@anwar1909_react-native-background-geolocation'
-project(':@anwar1909_react-native-background-geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/@anwar1909/react-native-background-geolocation/android/lib')
+project(':@anwar1909_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, '../node_modules/@anwar1909/react-native-background-geolocationx/android/common')
+include ':@anwar1909_react-native-background-geolocationx'
+project(':@anwar1909_react-native-background-geolocationx').projectDir = new File(rootProject.projectDir, '../node_modules/@anwar1909/react-native-background-geolocationx/android/lib')
 ...
 ```
 
@@ -74,7 +74,7 @@ public class MainApplication extends Application implements ReactApplication {
 #### iOS setup
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Add `./node_modules/@anwar1909/react-native-background-geolocation/ios/RCTBackgroundGeolocation.xcodeproj`
+2. Add `./node_modules/@anwar1909/react-native-background-geolocationx/ios/RCTBackgroundGeolocation.xcodeproj`
 3. In the XCode project navigator, select your project, select the `Build Phases` tab and in the `Link Binary With Libraries` section add **libRCTBackgroundGeolocation.a**
 4. Add `UIBackgroundModes` **location** to `Info.plist`
 5. Add `NSMotionUsageDescription` **App requires motion tracking** to `Info.plist` (required by ACTIVITY_PROVIDER)
@@ -175,7 +175,7 @@ The repository [react-native-background-geolocation-example](https://github.com/
 ```javascript
 import React, { Component } from 'react';
 import { Alert } from 'react-native';
-import BackgroundGeolocation from '@anwar1909/react-native-background-geolocation';
+import BackgroundGeolocation from '@anwar1909/react-native-background-geolocationx';
 
 class BgTracking extends Component {
   componentDidMount() {

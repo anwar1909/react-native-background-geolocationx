@@ -7,7 +7,6 @@ module.exports = {
       platforms: {
         android: {
           sourceDir: path.join(__dirname, 'android', 'background-geolocation'),
-          libraryName: 'anwar1909_react-native-background-geolocationx',
           packageImportPath: 'import com.anwar1909.bgloc.react.BackgroundGeolocationPackage;'
         },
       },
