@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+apply from: './VERSIONS.gradle'
+
+repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+android {
+    namespace "com.anwar1909.bgloc.react"
+    compileSdkVersion project.ext.getCompileSdkVersion()
+    buildToolsVersion project.ext.getBuildToolsVersion()
+
+    defaultConfig {
+        minSdkVersion project.ext.getMinSdkVersion()
+        targetSdkVersion project.ext.getTargetSdkVersion()
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resValue "string", getResourcePrefix() + "account_name", 'Locations'
+        resValue "string", getResourcePrefix() + "account_type", getAccountPrefix() + '.account'
+        resValue "string", getResourcePrefix() + "content_authority", getAccountPrefix() + '.provider'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    useLibrary 'android.test.runner'
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.mock'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation "com.github.suman379:RealTime:master-SNAPSHOT"
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.1.0'
+
+    implementation "io.github.nishkarsh:android-permissions:0.1.7"
+    implementation "com.github.tony19:logback-android:1.1.1-9"
+    implementation "org.slf4j:slf4j-api:1.7.21"
+    implementation "com.github.jparkie:promise:1.0.3"
+
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test:runner:1.1.0"
+    androidTestImplementation "androidx.test:rules:1.1.0"
+}

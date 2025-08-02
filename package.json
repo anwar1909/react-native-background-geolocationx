@@ -1,5 +1,5 @@
 {
-  "name": "@anwar1909/react-native-background-geolocation",
+  "name": "@anwar1909/react-native-background-geolocationx",
   "version": "0.7.52",
   "description": "Optimized background location tracking",
   "main": "./index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anwar1909/react-native-background-geolocation.git"
+    "url": "git+https://github.com/anwar1909/react-native-background-geolocationx.git"
   },
   "keywords": [
     "gps",
@@ -31,9 +31,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/anwar1909/react-native-background-geolocation/issues"
+    "url": "https://github.com/anwar1909/react-native-background-geolocationx/issues"
   },
-  "homepage": "https://github.com/anwar1909/react-native-background-geolocation#readme",
+  "homepage": "https://github.com/anwar1909/react-native-background-geolocationx#readme",
   "dependencies": {
     "plist": "^3.0.1"
   },

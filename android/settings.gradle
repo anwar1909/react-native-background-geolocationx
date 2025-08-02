@@ -1,3 +1,5 @@
-include ':lib'
-include ':@anwar1909_react-native-background-geolocation-common'
-project(':@anwar1909_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, './common')
+// include ':lib'
+// include ':@anwar1909_react-native-background-geolocation-common'
+// project(':@anwar1909_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, './common')
+// include ':anwar1909_react-native-background-geolocationx'
+// project(':anwar1909_react-native-background-geolocationx').projectDir = new File(rootProject.projectDir, '../node_modules/@anwar1909/react-native-background-geolocation/android/background-geolocation')
