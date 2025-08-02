@@ -6,7 +6,7 @@ module.exports = {
       root: __dirname,
       platforms: {
         android: {
-          sourceDir: path.join(__dirname, 'android', 'background-geolocation'),
+          sourceDir: path.join(__dirname, 'android', 'lib'),
           packageImportPath: 'import com.anwar1909.bgloc.react.BackgroundGeolocationPackage;'
         },
       },
